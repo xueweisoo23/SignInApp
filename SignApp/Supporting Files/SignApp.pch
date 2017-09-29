@@ -1,0 +1,15 @@
+//
+//  SignApp.pch
+//  SignApp
+//
+//  Created by Genius on 2017/9/27.
+//  Copyright © 2017年 Xue. All rights reserved.
+//
+
+#ifndef SignApp_pch
+#define SignApp_pch
+
+#import "GlobeDefine.h"
+#import <MBProgressHUD.h>
+
+#endif

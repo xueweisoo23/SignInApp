@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f6S-iD-U3n">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="AcD-CH-Jjc">
+            <objects>
+                <navigationController id="f6S-iD-U3n" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="psF-xI-L7y">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dyf-Rx-FXs">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="rQn-pk-Y6I" kind="relationship" relationship="rootViewController" id="5b5-V6-qY0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="idu-48-LFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-351" y="111"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="boO-8C-0DH">
+            <objects>
+                <viewController id="rQn-pk-Y6I" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JKq-3e-Cz7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="diE-cK-rPY">
+                                <rect key="frame" x="162.5" y="261.5" width="50" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sqW-T7-Qvr">
+                                <rect key="frame" x="162.5" y="311.5" width="50" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sh6-ms-EJ0">
+                                <rect key="frame" x="171.5" y="378" width="31" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mRn-S2-BtD"/>
+                                </constraints>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginBtnTapped:" destination="rQn-pk-Y6I" eventType="touchUpInside" id="z0P-MZ-LzF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sqW-T7-Qvr" firstAttribute="centerX" secondItem="JKq-3e-Cz7" secondAttribute="centerX" id="4mR-JN-mqQ"/>
+                            <constraint firstItem="diE-cK-rPY" firstAttribute="centerX" secondItem="JKq-3e-Cz7" secondAttribute="centerX" id="Ayn-Yx-pOK"/>
+                            <constraint firstItem="Sh6-ms-EJ0" firstAttribute="centerX" secondItem="JKq-3e-Cz7" secondAttribute="centerX" id="Zks-iz-vLE"/>
+                            <constraint firstItem="diE-cK-rPY" firstAttribute="centerY" secondItem="JKq-3e-Cz7" secondAttribute="centerY" constant="-25" id="cPV-vz-lMM"/>
+                            <constraint firstItem="Sh6-ms-EJ0" firstAttribute="top" secondItem="sqW-T7-Qvr" secondAttribute="bottom" constant="36.5" id="gmJ-Gn-dIk"/>
+                            <constraint firstItem="sqW-T7-Qvr" firstAttribute="centerY" secondItem="JKq-3e-Cz7" secondAttribute="centerY" constant="25" id="hff-f6-zgO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qGU-bc-7P0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PL6-Rq-q5L"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4BW-1v-DeP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="441" y="110"/>
+        </scene>
+    </scenes>
+</document>
